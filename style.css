@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainimg1 {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden; 
+}
+
+.mainimg1 img {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    transition: transform 1s linear, opacity 1s linear;
+}
+
+.mainimg1 .img1 {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-350px); 
+}
+
+.mainimg1:hover .img1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.mainimg2 {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden; 
+}
+
+.mainimg2 img {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    transition: transform 1s linear, opacity 1s linear;
+}
+
+.mainimg2 .img2 {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-350px); 
+}
+
+.mainimg2:hover .img2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.mainimg3{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+.mainimg3 img{
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    transition: transform 1s linear, opacity 1s linear;
+}
+.mainimg3 .img3{
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-350px);
+}
+.mainimg3:hover .img3{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media screen and (max-width: 400px) {
+    .images{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
